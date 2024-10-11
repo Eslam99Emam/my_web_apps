@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 50px;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background: linear-gradient(#10e, #402);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+    margin: 14px 0;
+}
+
+ul:hover li a {
+    opacity: 0;
+}
+
+ul li a {
+    background-color: #004;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px;
+    position: relative;
+    z-index: 100;
+    border-radius: 40px;
+    transition: 300ms;
+    width: 260px;
+    display: inline-block;
+}
+
+ul li a:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    background-color: darkorchid;
+}
+
+ul li::after {
+    content: attr(data-text);
+    color: #ccc;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    letter-spacing: 50px;
+}
+
+ul li:hover::after {
+    opacity: 1;
+    letter-spacing: 5px;
+}
+
+ul li::before {
+    content: '';
+    width: 300px;
+    height: 300px;
+    color: #fff;
+    position: absolute;
+    left: 80%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    background-color: #ccc;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ul li:hover::before {
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+}

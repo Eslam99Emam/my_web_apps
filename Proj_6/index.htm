@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>ES</h1>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#Main">Main</a></li>
+                    <li><a href="#Photos">Photos</a></li>
+                    <li><a href="#Sign">Sign in</a></li>
+                </ul>
+            </nav>
+            <div id="clocks">
+                <div><span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span> <span
+                        id="ampm">am</span></div>
+                <div><span id="day">00</span>/<span id="month">00</span>/<span id="year">00</span> <span
+                        id="weekday">fri</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="Main">
+        <div id="contOwrd"></div>
+    </section>
+    <section id="Photos">
+        <div id="container">
+            <div class="card">
+                <img src="./IMgs/vale-5TfjVPWevE0-unsplash.jpg" alt="">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ullam corrupti, accusamus
+                    adipisci dolore blanditiis libero quasi.</h2>
+                <a href="https://unsplash.com/photos/5TfjVPWevE0">read more</a>
+            </div>
+            <div class="card">
+                <img src="./IMgs/museum-of-new-zealand-te-papa-tongarewa-h2qlQSm7N-0-unsplash.jpg" alt="">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ullam corrupti, accusamus
+                    adipisci dolore blanditiis libero quasi.</h2>
+                <a href="https://unsplash.com/photos/h2qlQSm7N-0">read more</a>
+            </div>
+            <div class="card">
+                <img src="./IMgs/stephan-ostrowski-c86TIDWfQl0-unsplash.jpg" alt="">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ullam corrupti, accusamus
+                    adipisci dolore blanditiis libero quasi.</h2>
+                <a href="https://unsplash.com/photos/c86TIDWfQl0">read more</a>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="Sign">
+        <img src="./IMgs/bernd-dittrich-JZlFpF21OT0-unsplash.jpg" alt="">
+        <input type="email" name="User" id="em" placeholder="Please enter your email">
+    </section> -->
+    <script src="./script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400
+        });</script>
+</body>
+
+</html>

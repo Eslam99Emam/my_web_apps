@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth !important;
+}
+
+header {
+    width: 100%;
+    height: 7em;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+}
+
+header button{
+    height: 2em !important;
+    border-radius: 25px !important;
+    font-size: 2em !important;
+    border: none !important;
+    opacity: 0.9 !important;
+    transition: 0.25s;
+}
+header button:focus{
+    outline: none !important;
+}
+header button:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+
+header div button {
+    margin: 0 20px;
+}
+section{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+#contain{
+    background-image: radial-gradient(15% 30% at bottom right,rgba(0, 0, 255, 0.87) 75%,#00afff 76%, rgba(0, 0, 0, 0.4)),radial-gradient(15% 30% at top left,rgba(255, 0, 0, 0.87) 75%,yellow 76%, rgba(0, 0, 0, 0.4));
+    background-color: rebeccapurple;
+}
+
+#conti{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0px 10%;
+    overflow-x: scroll;
+}
+button[href="#conti"] {
+    position: absolute;
+    top: 100vh;
+    width: 10%;
+    height: 100vh;
+    border: none;
+    background: transparent;
+}
+
+button[href="#conti"]:focus {
+    outline: none;
+}
+
+button[href="#conti"]:hover {
+    cursor: pointer;
+    background: #00000030;
+}
+a.badge.badge-primary {
+    height: 2em !important;
+    border-radius: 25px !important;
+    font-size: 2em !important;
+    border: none !important;
+    opacity: 0.9 !important;
+    transition: 0.25s;
+    margin: 8px;
+}
+.carousel-item div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0 20%;
+    background:linear-gradient(180deg, #f00 45%, #00f 60%);;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card-footer:hover {
+    background: #0057c8;
+}
+a {
+    color: #fff;
+    font-size: 1.5em;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* #conti::-webkit-scrollbar-button{} */
+#conti::-webkit-scrollbar{
+    background: rgba(0, 128, 128, 0.9);
+    border-radius: 42PX;
+    display: none;
+}
+/* #conti::-webkit-scrollbar-thumb{
+    background: #007bff;
+}
+#conti::-webkit-scrollbar-track-piece{
+    background: #a8d8fd;
+} */
+
+.card {
+    overflow: hidden;
+    border-radius: 2em;
+    min-width: 22.5em;
+    max-width: 22.5em;
+    margin: 0 20px;
+    height: 30em;
+}
+
+.card img{
+    height: 12.5em;
+}
+w-10{
+    width: 10% !important;
+}
+
+footer {
+    height:fit-content;
+    background-color: #333;
+    color: #fff;
+    padding: 5%;
+}
+span {
+    display: block;
+    font-size: .75em;
+    font-weight: 400;
+}
+.contacti {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 5em 2em 2em 2em;
+}

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,
+            rgb(111, 255, 44),
+            rgb(26, 255, 244));
+}
+
+.cont {
+    background-color: #222;
+    height: 35em;
+    width: 23em;
+    color: #fff;
+    border-radius: 30px;
+}
+
+#give {
+    color: grey;
+}
+
+.name {
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.viu {
+    height: 10em;
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#vu {
+    background-color: #0e3b1499;
+    padding: 10px;
+    border-radius: 30px;
+    width: 21em;
+    height: 100%;
+    overflow: hidden;
+}
+
+.buttons {
+    width: 100%;
+    text-align: center;
+}
+
+.nums {
+    border-radius: 20px;
+    margin: 23px 10px 10px;
+    height: 2em;
+    border: none;
+}
+
+.nums:enabled {
+    outline: none;
+}
+
+.num:active {
+    background-color: #999;
+}
+
+.sum:active {
+    background-color: #772000;
+}
+
+.sum {
+    background-color: orangered;
+}
+
+#get,
+#give {
+    height: 50%;
+}
