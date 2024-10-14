@@ -4,37 +4,33 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --primary: #fff9cc;
+}
+
 body {
     padding: 0;
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-section {
-    padding: 6.25em 12.5em;
-}
-
-/* h2 {
-    color: black;
-} */
-
 header {
-    background-color: #eee;
+    background-color: #00000077;
     width: 100%;
-    position: fixed;
-    z-index: 9999;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     height: 5.765625em;
-    padding: 25px 50px;
+    padding: 3em 12.5em;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
 }
 
 
@@ -45,12 +41,13 @@ header a {
 .logo {
     color: #ff9900;
     text-transform: uppercase;
+    font-family: cursive, ;
     font-size: 1.8em;
     font-weight: 800;
 }
 
 nav a:hover {
-    color: #099;
+    color: #ff9900;
     transform: scale(1.06);
 }
 
@@ -58,6 +55,11 @@ nav a {
     padding-right: 20px;
     transition: 0.3s ease;
 }
+
+section {
+    padding: 6.25em 12.5em;
+}
+
 .main {
     width: 100%;
     display: flex;
@@ -69,25 +71,17 @@ nav a {
     background-attachment: fixed;
 }
 
-h2 span {
-    font-size: 2.5em;
-    color: #00f;
-    display: inline-block;
-    margin-top: 5px;
-    margin-left: -1px;
-}
-
-.main h3 {
-    font-size: 1.2em;
-    color: rgb(0, 0, 0);
+.main h1 ,
+.main h2 {
+    color: var(--primary);
     margin-top: 5px;
     letter-spacing: 0.4px;
     margin-bottom: 20px;
 }
 
-.mre {
+.more {
     font-size: 1em;
-    color: #040404;
+    color: var(--primary);
     background-color: #ff9900;
     display: inline-block;
     padding: 0.7em 1.2em;
@@ -96,15 +90,15 @@ h2 span {
     transition: 0.3s ease;
 }
 
-.mre:hover {
+.more:hover {
     transform: scale(1.1);
-    color: #000;
 }
 
 .working_websites a {
     font-size: 2.3em;
     padding-right: 5px;
     transition: 0.3s ease;
+    color: var(--primary);
 }
 
 .working_websites .in:hover {
@@ -132,16 +126,16 @@ h2 span {
 }
 
 #services {
-    background-image: linear-gradient(to bottom, rgba(64, 64, 64, 0.5), rgb(136, 145, 140));
+    position: relative;
+    background-image: linear-gradient(to bottom, #292636, #ff7449);
     min-height: 100vh;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: top;
+    text-align: center;
     color:#ff9900;
     margin-bottom: 1em;
+    font-size: 3em;
 }
 
 .content {
@@ -174,7 +168,7 @@ h2 span {
 }
 
 .cards {
-    background-image: linear-gradient(rgba(145, 145, 145, 0.5), rgb(102, 102, 159));
+    background-image: linear-gradient(to bottom, #ff744977, #292636cc);
     width: 17em;
     min-height: 20em;
     margin: 2em;
@@ -206,6 +200,7 @@ h2 span {
 }
 
 .info p {
+    color: var(--primary);
     padding: 1em;
     font-weight: 500;
 }
@@ -220,6 +215,7 @@ h2 span {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 #projects .content {
@@ -246,7 +242,7 @@ h2 span {
 .proj-cards {
     background-image: radial-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
     border: 2px rgba(255, 255, 255, 0.2);
-    width: 17em;
+    width: 20em;
     min-height: 14em;
     border-radius: 20px;
     box-shadow: 2px 2px 10px 10px rgba(255, 255, 255, 0);
@@ -287,7 +283,7 @@ h2 span {
     font-weight: 900;
 }
 
-.mre-detail:hover {
+.more-detail:hover {
     color:#ff99007f;
 }
 
